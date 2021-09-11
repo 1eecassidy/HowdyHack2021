@@ -11,7 +11,6 @@ import java.io.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.*;
-
 import resources.SimpleAudioPlayer;
 
 //import sun.audio.*;
@@ -68,6 +67,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39180__jobro__piano-ff-033.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/6.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
 
                      //AudioStream audioStream = new AudioStream(inputStream);
                         //AudioPlayer.player.start(audioStream);
@@ -81,6 +82,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39181__jobro__piano-ff-034.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/7.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -94,6 +97,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39182__jobro__piano-ff-035.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/8.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -107,6 +112,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39183__jobro__piano-ff-036.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/9.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -120,6 +127,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39184__jobro__piano-ff-037.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/10.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -132,6 +141,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39185__jobro__piano-ff-038.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/11.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -145,6 +156,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39186__jobro__piano-ff-039.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/12.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -160,6 +173,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39187__jobro__piano-ff-040.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/13.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -173,6 +188,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39188__jobro__piano-ff-041.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/14.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -186,6 +203,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39189__jobro__piano-ff-042.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/15.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -199,6 +218,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39190__jobro__piano-ff-043.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/16.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -212,6 +233,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39191__jobro__piano-ff-044.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/17.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -227,6 +250,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39193__jobro__piano-ff-045.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/18.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -240,6 +265,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39194__jobro__piano-ff-046.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/19.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -253,6 +280,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39195__jobro__piano-ff-047.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/20.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -266,6 +295,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39196__jobro__piano-ff-048.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/21.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -279,6 +310,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39197__jobro__piano-ff-049.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/22.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -292,6 +325,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39198__jobro__piano-ff-050.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/23.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -305,6 +340,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39199__jobro__piano-ff-051.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/24.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -320,6 +357,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39200__jobro__piano-ff-052.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/25.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -334,6 +373,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39179__jobro__piano-ff-032.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/5.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -347,6 +388,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39178__jobro__piano-ff-031.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/4.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -360,6 +403,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39177__jobro__piano-ff-030.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/3.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -373,6 +418,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39176__jobro__piano-ff-029.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/2.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -386,6 +433,8 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         inputStream = getClass().getResourceAsStream("/resources/39175__jobro__piano-ff-028.wav");
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/1.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -397,8 +446,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39174__jobro__piano-ff-027.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39174__jobro__piano-ff-027.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/0.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -410,8 +461,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39173__jobro__piano-ff-026.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39173__jobro__piano-ff-026.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/-1.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -423,8 +476,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39172__jobro__piano-ff-025.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39172__jobro__piano-ff-025.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/-2.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -436,8 +491,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39171__jobro__piano-ff-024.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39171__jobro__piano-ff-024.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/-3.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -449,8 +506,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39201__jobro__piano-ff-053.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39201__jobro__piano-ff-053.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/26.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -461,8 +520,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39202__jobro__piano-ff-054.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39202__jobro__piano-ff-054.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/27.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -473,8 +534,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39203__jobro__piano-ff-055.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39203__jobro__piano-ff-055.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/28.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -485,8 +548,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39204__jobro__piano-ff-056.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39204__jobro__piano-ff-056.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/29.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -497,8 +562,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39205__jobro__piano-ff-057.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39205__jobro__piano-ff-057.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/30.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -509,8 +576,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39206__jobro__piano-ff-058.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39206__jobro__piano-ff-058.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/31.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -521,8 +590,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39207__jobro__piano-ff-059.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39207__jobro__piano-ff-059.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/32.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -533,8 +604,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39208__jobro__piano-ff-060.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39208__jobro__piano-ff-060.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/33.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -545,8 +618,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39209__jobro__piano-ff-061.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39209__jobro__piano-ff-061.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/34.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -557,8 +632,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
                 InputStream inputStream;
                 try {
                         inputStream = getClass().getResourceAsStream("/resources/39210__jobro__piano-ff-062.wav");
-                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/39210__jobro__piano-ff-062.wav");
+                        SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/35.wav");
                         player.play();
+                        Harmonize tester = new Harmonize(keyCode);
+                        tester.Harmonizer();
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
