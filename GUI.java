@@ -1,10 +1,12 @@
-package howdyHack2021;
+
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.BorderFactory;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -30,6 +32,8 @@ public class GUI implements ActionListener{
 		JButton button3 = new JButton("Random");
 		button3.addActionListener(this);
 		
+		ImageIcon image = new ImageIcon("piano.jpg");
+
 		label = new JLabel("Number of clicks: 0");
 		
 		JPanel panel = new JPanel();
@@ -39,13 +43,14 @@ public class GUI implements ActionListener{
 		panel.add(button2);
 		panel.add(button3);
 		panel.add(label);
+		frame.getContentPane().setBackground(Color.red);
 		
 		frame.add(panel, BorderLayout.CENTER);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setTitle("Our GUI");
 		frame.pack();
 		frame.setVisible(true);
-		
+		frame.setIconImage(image.getImage());
 	}
 	
 	public static void main(String[] args) {
