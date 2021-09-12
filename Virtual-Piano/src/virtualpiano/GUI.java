@@ -32,9 +32,12 @@ public class GUI implements ActionListener{
 		button1.setActionCommand("something");
 		button1.addActionListener(this);
 		button1.setOpaque(true);
-		button1.setBackground(Color.green);
 		button2.addActionListener(this);
+		button2.setActionCommand("nothing");
+		button2.setOpaque(true);
 		button3.addActionListener(this);
+		button3.setActionCommand("everything");
+		button3.setOpaque(true);
 		
 		ImageIcon image = new ImageIcon("piano.jpg");
 
@@ -69,10 +72,10 @@ public class GUI implements ActionListener{
 		if (e.getActionCommand() == "something")
 		{
 			button1count++;
-			label.setText(""+button1count);
-			if (button1count%2 == 0)
+			//label.setText(""+button1count);
+			if (button1count%2 == 1)
 			{
-				button1.setBackground(Color.red);
+				button1.setBackground(Color.GRAY);
 			}
 			else
 			{
@@ -81,7 +84,27 @@ public class GUI implements ActionListener{
 		}
 		else if (e.getActionCommand() == "nothing")
 		{
-
+			button2count++;
+			if (button2count%2 == 1)
+			{
+				button2.setBackground(Color.GRAY);
+			}
+			else
+			{
+				button2.setBackground(null);
+			}
+		}
+		else if (e.getActionCommand() == "everything")
+		{
+			button3count++;
+			if (button3count%2 == 1)
+			{
+				button3.setBackground(Color.GRAY);
+			}
+			else
+			{
+				button3.setBackground(null);
+			}
 		}
 	}
 }
