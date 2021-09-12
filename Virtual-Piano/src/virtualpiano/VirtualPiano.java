@@ -30,6 +30,29 @@ public class VirtualPiano extends JFrame implements KeyListener {
     String filePath = new File("").getAbsolutePath();
     int choice = 0;
 
+    VirtualPiano() {
+        try {
+                backgroundImage = javax.imageio.ImageIO.read(getClass().getClassLoader().getResource("resources/keyBoard.jpg"));
+                setContentPane(new JPanel(new BorderLayout()) {
+                        @Override
+                        public void paintComponent(Graphics g) {
+                                g.drawImage(backgroundImage, 0, 0, null);
+                        }
+                });
+        } catch (IOException e) {
+                throw new RuntimeException(e);
+        }
+
+        addKeyListener(this);
+        setSize(547, 191);
+        setVisible(true);
+        setLocationRelativeTo(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        //BorderLayout layout = new BorderLayout();
+        //setLayout(layout);
+
+}
+
     VirtualPiano(int x) {
             choice = x;
             try {
@@ -52,6 +75,11 @@ public class VirtualPiano extends JFrame implements KeyListener {
             //BorderLayout layout = new BorderLayout();
             //setLayout(layout);
 
+    }
+
+    public void setChoice(int x)
+    {
+        choice = x;
     }
 
     @Override

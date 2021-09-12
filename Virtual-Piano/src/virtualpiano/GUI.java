@@ -25,6 +25,8 @@ public class GUI implements ActionListener{
 	JButton button1 = new JButton("Major Triad");
 	JButton button2 = new JButton("Minor Triad");
 	JButton button3 = new JButton("Major 7th");
+
+	VirtualPiano orignalpiano = new VirtualPiano(-1); 
 	
 	public GUI() {
 		
@@ -62,7 +64,7 @@ public class GUI implements ActionListener{
 	
 	public static void main(String[] args) {
 		new GUI();
-		new VirtualPiano(-1);
+		//new VirtualPiano(-1);
 	}
 
 	@Override
@@ -152,19 +154,19 @@ public class GUI implements ActionListener{
 	{
 		if (button1.getBackground() == Color.GRAY)
 		{
-			new VirtualPiano(0);
+			orignalpiano.setChoice(0);
 		}
 		else if (button2.getBackground() == Color.GRAY)
 		{
-			new VirtualPiano(1);
+			orignalpiano.setChoice(1);
 		}
 		else if (button3.getBackground() == Color.GRAY)
 		{
-			new VirtualPiano(2);
+			orignalpiano.setChoice(2);
 		}
 		else
 		{
-			new VirtualPiano(-1);
+			orignalpiano.setChoice(-1);
 		}
 	}
 }
