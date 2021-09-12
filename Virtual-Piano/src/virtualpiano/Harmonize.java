@@ -101,6 +101,38 @@ public class Harmonize
         }
         catch (Exception ex) {}}
 
+        if (x == 4)
+
+        {try
+        {
+            SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)-5) + ".wav");
+            SimpleAudioPlayer player1 = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)-8) + ".wav");
+
+            player.play();
+            player1.play();
+            // System.out.println("hellloooo");
+            // System.out.println(keycodereal);
+            // System.out.println(map.get(keycodereal));
+            // System.out.println("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
+        }
+        catch (Exception ex) {}}
+
+        if (x == 5)
+
+        {try
+        {
+            SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)-5) + ".wav");
+            SimpleAudioPlayer player1 = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)-9) + ".wav");
+
+            player.play();
+            player1.play();
+            // System.out.println("hellloooo");
+            // System.out.println(keycodereal);
+            // System.out.println(map.get(keycodereal));
+            // System.out.println("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
+        }
+        catch (Exception ex) {}}
+
 
         
 
