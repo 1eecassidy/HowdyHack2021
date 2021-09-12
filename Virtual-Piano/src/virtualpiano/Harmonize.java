@@ -18,9 +18,11 @@ public class Harmonize
         }
     }
     
-    public void Harmonizer()
+    public void Harmonizer(int x)
     {
-        try
+        if (x == 0)
+
+        {try
         {
             SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+4) + ".wav");
             SimpleAudioPlayer player1 = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+7) + ".wav");
@@ -31,7 +33,22 @@ public class Harmonize
             // System.out.println(map.get(keycodereal));
             // System.out.println("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
         }
-        catch (Exception ex) {}
+        catch (Exception ex) {}}
+
+        if (x == 1)
+
+        {try
+        {
+            SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
+            SimpleAudioPlayer player1 = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+7) + ".wav");
+            player.play();
+            player1.play();
+            // System.out.println("hellloooo");
+            // System.out.println(keycodereal);
+            // System.out.println(map.get(keycodereal));
+            // System.out.println("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
+        }
+        catch (Exception ex) {}}
     }
 
 //     public static void main(String[] args){

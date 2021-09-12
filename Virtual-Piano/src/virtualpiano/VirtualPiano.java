@@ -28,8 +28,10 @@ public class VirtualPiano extends JFrame implements KeyListener {
      */
     final Image backgroundImage;
     String filePath = new File("").getAbsolutePath();
+    int choice = 0;
 
-    VirtualPiano() {
+    VirtualPiano(int x) {
+            choice = x;
             try {
                     backgroundImage = javax.imageio.ImageIO.read(getClass().getClassLoader().getResource("resources/keyBoard.jpg"));
                     setContentPane(new JPanel(new BorderLayout()) {
@@ -68,7 +70,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/6.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
 
                      //AudioStream audioStream = new AudioStream(inputStream);
                         //AudioPlayer.player.start(audioStream);
@@ -83,7 +85,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/7.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -98,7 +100,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/8.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -113,7 +115,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/9.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -128,7 +130,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/10.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -142,7 +144,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/11.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -157,7 +159,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/12.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -174,7 +176,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/13.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -189,7 +191,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/14.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -204,7 +206,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/15.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -219,7 +221,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/16.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -234,7 +236,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/17.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -251,7 +253,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/18.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -266,7 +268,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/19.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -281,7 +283,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/20.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -296,7 +298,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/21.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -311,7 +313,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/22.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -326,7 +328,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/23.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -341,7 +343,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/24.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -358,7 +360,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/25.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -374,7 +376,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/5.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -389,7 +391,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/4.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -404,7 +406,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/3.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -419,7 +421,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/2.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -434,7 +436,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/1.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -449,7 +451,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/0.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -464,7 +466,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/-1.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -479,7 +481,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/-2.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -494,7 +496,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/-3.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -509,7 +511,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/26.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -523,7 +525,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/27.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -537,7 +539,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/28.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -551,7 +553,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/29.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -565,7 +567,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/30.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -579,7 +581,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/31.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -593,7 +595,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/32.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -607,7 +609,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/33.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -621,7 +623,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/34.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -635,7 +637,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
                         SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/35.wav");
                         player.play();
                         Harmonize tester = new Harmonize(keyCode);
-                        tester.Harmonizer();
+                        tester.Harmonizer(choice);
                         // AudioStream audioStream = new AudioStream(inputStream);
                         // AudioPlayer.player.start(audioStream);
                 } catch (Exception ex) {
@@ -651,7 +653,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
 
     public static void main(String[] args) {
             // TODO code application logic here
-            VirtualPiano test = new VirtualPiano();
+            VirtualPiano test = new VirtualPiano(1);
             new GUI();
 
     }

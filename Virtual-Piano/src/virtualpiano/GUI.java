@@ -76,10 +76,12 @@ public class GUI implements ActionListener{
 			if (button1count%2 == 1)
 			{
 				button1.setBackground(Color.GRAY);
+				this.getHarmonyChoice();
 			}
 			else
 			{
 				button1.setBackground(null);
+				this.getHarmonyChoice();
 			}
 		}
 		else if (e.getActionCommand() == "nothing")
@@ -88,10 +90,12 @@ public class GUI implements ActionListener{
 			if (button2count%2 == 1)
 			{
 				button2.setBackground(Color.GRAY);
+				this.getHarmonyChoice();
 			}
 			else
 			{
 				button2.setBackground(null);
+				this.getHarmonyChoice();
 			}
 		}
 		else if (e.getActionCommand() == "everything")
@@ -100,11 +104,25 @@ public class GUI implements ActionListener{
 			if (button3count%2 == 1)
 			{
 				button3.setBackground(Color.GRAY);
+				this.getHarmonyChoice();
 			}
 			else
 			{
 				button3.setBackground(null);
+				this.getHarmonyChoice();
 			}
+		}
+	}
+
+	public void getHarmonyChoice()
+	{
+		if (button1.getBackground() == Color.GRAY)
+		{
+			new VirtualPiano(0);
+		}
+		else if (button2.getBackground() == Color.GRAY)
+		{
+			new VirtualPiano(1);
 		}
 	}
 }
