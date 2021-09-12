@@ -20,6 +20,20 @@ public class Harmonize
     
     public void Harmonizer(int x)
     {
+        if (x == -1)
+
+        {try
+        {
+            // SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+4) + ".wav");
+            // SimpleAudioPlayer player1 = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+7) + ".wav");
+            // player.play();
+            // player1.play();
+            // System.out.println("hellloooo");
+            // System.out.println(keycodereal);
+            // System.out.println(map.get(keycodereal));
+            // System.out.println("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
+        }
+        catch (Exception ex) {}}
         if (x == 0)
 
         {try
@@ -43,6 +57,24 @@ public class Harmonize
             SimpleAudioPlayer player1 = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+7) + ".wav");
             player.play();
             player1.play();
+            // System.out.println("hellloooo");
+            // System.out.println(keycodereal);
+            // System.out.println(map.get(keycodereal));
+            // System.out.println("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
+        }
+        catch (Exception ex) {}}
+
+        if (x == 2)
+
+        {try
+        {
+            SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+4) + ".wav");
+            SimpleAudioPlayer player1 = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+7) + ".wav");
+            SimpleAudioPlayer player2= new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+11) + ".wav");
+
+            player.play();
+            player1.play();
+            player2.play();
             // System.out.println("hellloooo");
             // System.out.println(keycodereal);
             // System.out.println(map.get(keycodereal));
