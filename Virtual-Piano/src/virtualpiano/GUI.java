@@ -21,6 +21,7 @@ public class GUI implements ActionListener{
 	int button4count = 0;
 	int button5count = 0;
 	int button6count = 0;
+	int button7count = 0;
 	private JLabel label;
 	private JFrame frame;
 	private JPanel panel; 
@@ -30,6 +31,7 @@ public class GUI implements ActionListener{
 	JButton button4 = new JButton("Minor 7th");
 	JButton button5 = new JButton("Maj Trd Inv");
 	JButton button6 = new JButton("Mn Trd Inv");
+	JButton button7 = new JButton("Random");
 
 
 	VirtualPiano orignalpiano = new VirtualPiano(-1); 
@@ -61,6 +63,10 @@ public class GUI implements ActionListener{
 		button6.setActionCommand("no");
 		button6.setOpaque(true);
 		button6.setBackground(null);
+		button7.addActionListener(this);
+		button7.setActionCommand("hi");
+		button7.setOpaque(true);
+		button7.setBackground(null);
 
 		
 		
@@ -77,6 +83,7 @@ public class GUI implements ActionListener{
 		panel.add(button2);
 		panel.add(button6);
 		panel.add(button4);
+		panel.add(button7);
 		panel.add(label);
 		panel.setBackground(new Color(180, 213, 250));
 		
@@ -129,6 +136,11 @@ public class GUI implements ActionListener{
 					button5count++;
 					button5.setBackground(null);
 				}
+				else if (button7.getBackground() == Color.GRAY)
+				{
+					button7count++;
+					button7.setBackground(null);
+				}
 				this.getHarmonyChoice();
 			}
 			else
@@ -168,6 +180,11 @@ public class GUI implements ActionListener{
 				{
 					button5count++;
 					button5.setBackground(null);
+				}
+				else if (button7.getBackground() == Color.GRAY)
+				{
+					button7count++;
+					button7.setBackground(null);
 				}
 				this.getHarmonyChoice();
 			}
@@ -209,6 +226,11 @@ public class GUI implements ActionListener{
 					button5count++;
 					button5.setBackground(null);
 				}
+				else if (button7.getBackground() == Color.GRAY)
+				{
+					button7count++;
+					button7.setBackground(null);
+				}
 				this.getHarmonyChoice();
 			}
 			else
@@ -248,6 +270,11 @@ public class GUI implements ActionListener{
 				{
 					button5count++;
 					button5.setBackground(null);
+				}
+				else if (button7.getBackground() == Color.GRAY)
+				{
+					button7count++;
+					button7.setBackground(null);
 				}
 				this.getHarmonyChoice();
 			}
@@ -290,6 +317,11 @@ public class GUI implements ActionListener{
 					button6count++;
 					button6.setBackground(null);
 				}
+				else if (button7.getBackground() == Color.GRAY)
+				{
+					button7count++;
+					button7.setBackground(null);
+				}
 				this.getHarmonyChoice();
 			}
 			else
@@ -331,11 +363,62 @@ public class GUI implements ActionListener{
 					button5count++;
 					button5.setBackground(null);
 				}
+				else if (button7.getBackground() == Color.GRAY)
+				{
+					button7count++;
+					button7.setBackground(null);
+				}
 				this.getHarmonyChoice();
 			}
 			else
 			{
 				button6.setBackground(null);
+				this.getHarmonyChoice();
+			}
+			this.getHarmonyChoice();
+		}
+		if (e.getActionCommand() == "hi")
+		{
+			button7count++;
+			//label.setText(""+button1count);
+			if (button7count%2 == 1)
+			{
+				button7.setBackground(Color.GRAY);
+				if (button1.getBackground() == Color.GRAY)
+				{
+					button1count++;
+					button1.setBackground(null);
+				}
+				else if (button3.getBackground() == Color.GRAY)
+				{
+					button3count++;
+					button3.setBackground(null);
+				}
+				else if (button4.getBackground() == Color.GRAY)
+				{
+					button4count++;
+					button4.setBackground(null);
+				}
+				else if (button2.getBackground() == Color.GRAY)
+				{
+					button2count++;
+					button2.setBackground(null);
+				}
+				else if (button5.getBackground() == Color.GRAY)
+				{
+					button5count++;
+					button5.setBackground(null);
+				}
+				else if (button6.getBackground() == Color.GRAY)
+				{
+					button6count++;
+					button6.setBackground(null);
+				}
+				this.getHarmonyChoice();
+			}
+			else
+			{
+				button7.setBackground(null);
 				this.getHarmonyChoice();
 			}
 			this.getHarmonyChoice();
@@ -367,6 +450,10 @@ public class GUI implements ActionListener{
 		else if (button6.getBackground() == Color.GRAY)
 		{
 			orignalpiano.setChoice(5);
+		}
+		else if (button7.getBackground() == Color.GRAY)
+		{
+			orignalpiano.setChoice(6);
 		}
 		else
 		{
