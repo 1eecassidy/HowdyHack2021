@@ -1,3 +1,5 @@
+package virtualpiano;
+
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -14,22 +16,24 @@ import javax.swing.JPanel;
 
 public class GUI implements ActionListener{
 	
-	int count = 0;
+	int button1count = 0;
+	int button2count = 0;
+	int button3count = 0;
 	private JLabel label;
 	private JFrame frame;
 	private JPanel panel; 
+	JButton button1 = new JButton("Harmonize");
+	JButton button2 = new JButton("Triad");
+	JButton button3 = new JButton("Random");
 	
 	public GUI() {
 		
 		frame = new JFrame();
-		
-		JButton button1 = new JButton("Harmonize");
+		button1.setActionCommand("something");
 		button1.addActionListener(this);
-		
-		JButton button2 = new JButton("Triad");
+		button1.setOpaque(true);
+		button1.setBackground(Color.green);
 		button2.addActionListener(this);
-		
-		JButton button3 = new JButton("Random");
 		button3.addActionListener(this);
 		
 		ImageIcon image = new ImageIcon("piano.jpg");
@@ -43,7 +47,7 @@ public class GUI implements ActionListener{
 		panel.add(button2);
 		panel.add(button3);
 		panel.add(label);
-		frame.getContentPane().setBackground(Color.red);
+		frame.getContentPane().setBackground(Color.GREEN);
 		
 		frame.add(panel, BorderLayout.CENTER);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -59,8 +63,25 @@ public class GUI implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		count++;
-		label.setText("Number of clicks: " + count);
+		// count++;
+		// label.setText("Number of clicks: " + count);
+		// label.setText(""+e.getSource());
+		if (e.getActionCommand() == "something")
+		{
+			button1count++;
+			label.setText(""+button1count);
+			if (button1count%2 == 0)
+			{
+				button1.setBackground(Color.red);
+			}
+			else
+			{
+				button1.setBackground(null);
+			}
+		}
+		else if (e.getActionCommand() == "nothing")
+		{
+
+		}
 	}
-	
 }

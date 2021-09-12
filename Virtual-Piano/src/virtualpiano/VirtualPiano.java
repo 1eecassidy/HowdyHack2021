@@ -652,6 +652,7 @@ public class VirtualPiano extends JFrame implements KeyListener {
     public static void main(String[] args) {
             // TODO code application logic here
             VirtualPiano test = new VirtualPiano();
+            new GUI();
 
     }
 }
