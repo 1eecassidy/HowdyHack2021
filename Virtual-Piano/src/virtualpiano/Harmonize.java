@@ -2,6 +2,7 @@ package virtualpiano;
 import resources.SimpleAudioPlayer;
 import java.awt.event.*;
 import java.util.HashMap; // import the HashMap class
+import java.lang.Math;
 
 public class Harmonize 
 {
@@ -81,7 +82,29 @@ public class Harmonize
             // System.out.println("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
         }
         catch (Exception ex) {}}
-    }
+
+        if (x == 3)
+
+        {try
+        {
+            SimpleAudioPlayer player = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
+            SimpleAudioPlayer player1 = new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+7) + ".wav");
+            SimpleAudioPlayer player2= new SimpleAudioPlayer("src/resources/" + ""+((int)map.get(keycodereal)+10) + ".wav");
+
+            player.play();
+            player1.play();
+            player2.play();
+            // System.out.println("hellloooo");
+            // System.out.println(keycodereal);
+            // System.out.println(map.get(keycodereal));
+            // System.out.println("src/resources/" + ""+((int)map.get(keycodereal)+3) + ".wav");
+        }
+        catch (Exception ex) {}}
+
+
+        
+
+    
 
 //     public static void main(String[] args){
 //     Harmonize test = new Harmonize(KeyEvent.VK_A);
@@ -90,4 +113,5 @@ public class Harmonize
 // }
 
     
+}
 }
