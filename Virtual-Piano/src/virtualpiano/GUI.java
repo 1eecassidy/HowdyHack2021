@@ -43,7 +43,7 @@ public class GUI implements ActionListener{
 		
 		ImageIcon image = new ImageIcon("piano.jpg");
 
-		label = new JLabel("Number of clicks: 0");
+		label = new JLabel("Howdy! Choose a chord");
 		
 		JPanel panel = new JPanel();
 		panel.setBorder(BorderFactory.createEmptyBorder(100, 100, 100, 100));
@@ -52,7 +52,7 @@ public class GUI implements ActionListener{
 		panel.add(button2);
 		panel.add(button3);
 		panel.add(label);
-		frame.getContentPane().setBackground(Color.GREEN);
+		panel.setBackground(new Color(180, 213, 250));
 		
 		frame.add(panel, BorderLayout.CENTER);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
